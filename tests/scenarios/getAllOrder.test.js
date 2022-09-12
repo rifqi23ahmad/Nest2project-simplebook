@@ -8,7 +8,7 @@ import SimpleBookAPI from '../pages/simplebook.api';
 import { GET_ALLORDER_SCHEMA } from '../schema/getAllOrder.schema.js';
 
 describe('Get All order', () => {
-    it.only('get all order list', async () => {
+    it('get all order list', async () => {
         const response = await SimpleBookAPI.getAllorder();
         //console.log(response.data)
         //kenapa pakai expect karena kita mau get data hanya dengan endpoint, tanpa auth atau apapun
