@@ -8,7 +8,8 @@ describe('Get list and status', () => {
         assert.equal(response.status, 200);
         assert.containsAllKeys(response.data, ["status"]);
         assert.isString(response.data.status);
-
+        
+        console.log (response.data);
     });
 
 
