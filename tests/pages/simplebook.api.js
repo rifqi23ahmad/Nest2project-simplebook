@@ -9,6 +9,7 @@ const SimpleBookAPI = {
     getvalidSingleBook: (data) => BaseAPI.get('/books/1', data),
     getBookbyType: () => BaseAPI.get('/books?type=fiction'),
     getBookbyLimit: () => BaseAPI.get('/books?limit=2'),
+    getAnOrder: () => BaseAPI.get ('orders'),
     submitOrder: (data) => BaseAPI.post('/orders', data),
     getAllorder: () => BaseAPI.get('/orders'),
     updateBook: () => BaseAPI.patch('/orders'),
